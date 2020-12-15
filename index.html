@@ -30,19 +30,62 @@
     </header>
     <div class="container">
       <!-- Timeblock    s go here -->
-      <div class="1hour hour">8AM TEXTBOX</div>
-      <div class="2hour hour">9AM TEXTBOX</div>
-      <div class="3hour hour">10AM TEXTBOX</div>
-      <div class="4hour hour">11AM TEXTBOX</div>
-      <div class="5hour hour">12PM TEXTBOX</div>
-      <div class="6hour hour">1PM TEXTBOX</div>
-      <div class="7hour hour">2PM TEXTBOX</div>
-      <div class="8hour hour">3PM TEXTBOX</div>
-      <div class="9hour hour">4PM TEXTBOX</div>
-      <div class="10hour hour">5PM TEXTBOX</div>
-    </div>
+      <div class ="row time-block">
+        <div class="col-1 hour">9:00AM</div>
+        <textarea class="col-10 block01"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class ="row time-block">
+        <div class="col-1 hour block02">10:00AM</div>
+        <textarea class="col-10"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class ="row time-block">
+        <div class="col-1 hour block03">11:00AM</div>
+        <textarea class="col-10"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class ="row time-block">
+        <div class="col-1 hour block04">12:00PM</div>
+        <textarea class="col-10"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class ="row time-block">
+        <div class="col-1 hour block05">01:00PM</div>
+        <textarea class="col-10"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+
+      <div class ="row time-block">
+        <div class="col-1 hour block06">02:00PM</div>
+        <textarea class="col-10"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+      <div class ="row time-block">
+        <div class="col-1 hour block07">03:00PM</div>
+        <textarea class="col-10"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+      <div class ="row time-block">
+        <div class="col-1 hour block08">04:00PM</div>
+        <textarea class="col-10"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+      <div class ="row time-block">
+        <div class="col-1 hour block09">05:00PM</div>
+        <textarea class="col-10"></textarea>
+        <button class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
+  <script>
+    var block01Text = $("block01")
+    localStorage.setItem("userBlock01: ", JSON.parse(block01Text);
+  </script>
 </html>
