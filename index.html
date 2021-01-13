@@ -19,8 +19,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <title>Work Day Scheduler</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+   </script>
+   <script type="text/javascript" src="script.js">
+   </script>
   </head>
 
   <body>
@@ -33,13 +36,13 @@
       <!-- Timeblock    s go here -->
       <div class ="row time-block">
         <div class="col-1 hour">9:00AM</div>
-        <textarea class="col-10 block01"></textarea>
-        <button class="btn col-1 saveBtn save01"><i class="far fa-save"></i></button>
+        <textarea id="block01" class="col-10"></textarea>
+        <button id="save01" class="btn col-1 saveBtn"><i class="far fa-save"></i></button>
       </div>
 
       <div class ="row time-block">
         <div class="col-1 hour">10:00AM</div>
-        <textarea class="col-10 block02"></textarea>
+        <textarea id="block02" class="col-10"></textarea>
         <button class="btn col-1 saveBtn save02"><i class="far fa-save"></i></button>
       </div>
 
@@ -56,28 +59,28 @@
       </div>
 
       <div class ="row time-block">
-        <div class="col-1 hour">01:00PM</div>
+        <div class="col-1 hour">1:00PM</div>
         <textarea class="col-10 block05"></textarea>
         <button class="btn col-1 saveBtn save05"><i class="far fa-save"></i></button>
       </div>
 
       <div class ="row time-block">
-        <div class="col-1 hour">02:00PM</div>
+        <div class="col-1 hour">2:00PM</div>
         <textarea class="col-10 block06"></textarea>
         <button class="btn col-1 saveBtn save06"><i class="far fa-save"></i></button>
       </div>
       <div class ="row time-block">
-        <div class="col-1 hour">03:00PM</div>
+        <div class="col-1 hour">3:00PM</div>
         <textarea class="col-10 block07"></textarea>
         <button class="btn col-1 saveBtn save07"><i class="far fa-save"></i></button>
       </div>
       <div class ="row time-block">
-        <div class="col-1 hour">04:00PM</div>
+        <div class="col-1 hour">4:00PM</div>
         <textarea class="col-10 block08"></textarea>
         <button class="btn col-1 saveBtn save08"><i class="far fa-save"></i></button>
       </div>
       <div class ="row time-block">
-        <div class="col-1 hour block09">05:00PM</div>
+        <div class="col-1 hour block09">5:00PM</div>
         <textarea class="col-10 block09"></textarea>
         <button class="btn col-1 saveBtn save09"><i class="far fa-save"></i></button>
       </div>
@@ -85,6 +88,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
-  <script>
-  </script>
+
 </html>
