@@ -1,12 +1,14 @@
 
 $(document).ready(() => {
     $("#save01").click(() => {
-        // $("#block01").prepend("Added to the front");
         var userInput01 = $("#block01").val()
-
-        console.log("Hey I am being clicked")
         localStorage.setItem("Some Info: ", userInput01 )
     });
+    $("#save02").click(() => {
+        var userInput02 = $("#block02").val()
+        localStorage.setItem("Some Info 2: ", userInput02 )
+    });
+
 });
 
 // Create variables for each time-block (9AM-5PM)
