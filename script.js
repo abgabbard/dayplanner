@@ -2,11 +2,39 @@
 $(document).ready(() => {
     $("#save01").click(() => {
         var userInput01 = $("#block01").val()
-        localStorage.setItem("Some Info: ", userInput01 )
+        localStorage.setItem("userStored01", userInput01 )
     });
     $("#save02").click(() => {
         var userInput02 = $("#block02").val()
-        localStorage.setItem("Some Info 2: ", userInput02 )
+        localStorage.setItem("usterStored02", userInput02 )
+    });
+    $("#save03").click(() => {
+        var userInput03 = $("#block03").val()
+        localStorage.setItem("usterStored03", userInput01 )
+    });
+    $("#save04").click(() => {
+        var userInput04 = $("#block04").val()
+        localStorage.setItem("usterStored04", userInput02 )
+    });
+    $("#save05").click(() => {
+        var userInput05 = $("#block05").val()
+        localStorage.setItem("usterStored05", userInput01 )
+    });
+    $("#save06").click(() => {
+        var userInput06 = $("#block06").val()
+        localStorage.setItem("usterStored06", userInput02 )
+    });
+    $("#save07").click(() => {
+        var userInput07 = $("#block07").val()
+        localStorage.setItem("usterStored07", userInput01 )
+    });
+    $("#save08").click(() => {
+        var userInput08 = $("#block08").val()
+        localStorage.setItem("usterStored08", userInput02 )
+    });
+    $("#save09").click(() => {
+        var userInput09 = $("#block09").val()
+        localStorage.setItem("usterStored09", userInput02 )
     });
 
 });
