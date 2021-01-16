@@ -1,5 +1,7 @@
 
 $(document).ready(() => {
+    var firstBlock = $("#block01")
+    firstBlock.text(localStorage.getItem("userStored01"))
     $("#save01").click(() => {
         var userInput01 = $("#block01").val()
         localStorage.setItem("userStored01", userInput01 )
@@ -36,7 +38,6 @@ $(document).ready(() => {
         var userInput09 = $("#block09").val()
         localStorage.setItem("userStored09", userInput09 )
     });
-
 });
 
 // Create variables for each time-block (9AM-5PM)
