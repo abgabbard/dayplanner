@@ -1,7 +1,23 @@
 
 $(document).ready(() => {
     var firstBlock = $("#block01")
+    var secondBlock = $("#block02")
+    var thirdBlock = $("#block03")
+    var fourthBlock = $("#block04")
+    var fifthBlock = $("#block05")
+    var sixthBlock = $("#block06")
+    var seventhBlock = $("#block07")
+    var eighthBlock = $("#block08")
+    var ninethBlock = $("#block09")
     firstBlock.text(localStorage.getItem("userStored01"))
+    secondBlock.text(localStorage.getItem("userStored02"))
+    thirdBlock.text(localStorage.getItem("userStored03"))
+    fourthBlock.text(localStorage.getItem("userStored04"))
+    fifthBlock.text(localStorage.getItem("userStored05"))
+    sixthBlock.text(localStorage.getItem("userStored06"))
+    seventhBlock.text(localStorage.getItem("userStored07"))
+    eighthBlock.text(localStorage.getItem("userStored08"))
+    ninethBlock.text(localStorage.getItem("userStored09"))
     $("#save01").click(() => {
         var userInput01 = $("#block01").val()
         localStorage.setItem("userStored01", userInput01 )
