@@ -67,6 +67,160 @@ $(document).ready(() => {
         var userInput09 = $("#block09").val()
         localStorage.setItem("userStored09", userInput09 )
     });
+
+    function beforeNine() {
+        $(".hourNine").addClass("future");
+        $(".hourTen").addClass("future");
+        $(".hourEleven").addClass("future");
+        $(".hourTwelve").addClass("future");
+        $(".hourOne").addClass("future");
+        $(".hourTwo").addClass("future");
+        $(".hourThree").addClass("future");
+        $(".hourFour").addClass("future");
+        $(".hourFive").addClass("future");
+      };
+      function afterFive() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("past");
+        $(".hourEleven").addClass("past");
+        $(".hourTwelve").addClass("past");
+        $(".hourOne").addClass("past");
+        $(".hourTwo").addClass("past");
+        $(".hourThree").addClass("past");
+        $(".hourFour").addClass("past");
+        $(".hourFive").addClass("past");
+      };
+      
+      function NineAM() {
+        $(".hourNine").addClass("present");
+        $(".hourTen").addClass("future");
+        $(".hourEleven").addClass("future");
+        $(".hourTwelve").addClass("future");
+        $(".hourOne").addClass("future");
+        $(".hourTwo").addClass("future");
+        $(".hourThree").addClass("future");
+        $(".hourFour").addClass("future");
+        $(".hourFive").addClass("future");
+      };
+  
+     
+      function TenAM() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("present");
+        $(".hourEleven").addClass("future");
+        $(".hourTwelve").addClass("future");
+        $(".hourOne").addClass("future");
+        $(".hourTwo").addClass("future");
+        $(".hourThree").addClass("future");
+        $(".hourFour").addClass("future");
+        $(".hourFive").addClass("future");
+      };
+      function ElevenAM() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("past");
+        $(".hourEleven").addClass("present");
+        $(".hourTwelve").addClass("future");
+        $(".hourOne").addClass("future");
+        $(".hourTwo").addClass("future");
+        $(".hourThree").addClass("future");
+        $(".hourFour").addClass("future");
+        $(".hourFive").addClass("future");
+      };
+      function TwelvePM() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("past");
+        $(".hourEleven").addClass("past");
+        $(".hourTwelve").addClass("present");
+        $(".hourOne").addClass("future");
+        $(".hourTwo").addClass("future");
+        $(".hourThree").addClass("future");
+        $(".hourFour").addClass("future");
+        $(".hourFive").addClass("future");
+      };
+      function OnePM() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("past");
+        $(".hourEleven").addClass("past");
+        $(".hourTwelve").addClass("past");
+        $(".hourOne").addClass("present");
+        $(".hourTwo").addClass("future");
+        $(".hourThree").addClass("future");
+        $(".hourFour").addClass("future");
+        $(".hourFive").addClass("future");
+      };
+      function TwoPM() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("past");
+        $(".hourEleven").addClass("past");
+        $(".hourTwelve").addClass("past");
+        $(".hourOne").addClass("past");
+        $(".hourTwo").addClass("present");
+        $(".hourThree").addClass("future");
+        $(".hourFour").addClass("future");
+        $(".hourFive").addClass("future");
+      };
+      function ThreePM() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("past");
+        $(".hourEleven").addClass("past");
+        $(".hourTwelve").addClass("past");
+        $(".hourOne").addClass("past");
+        $(".hourTwo").addClass("past");
+        $(".hourThree").addClass("present");
+        $(".hourFour").addClass("future");
+        $(".hourFive").addClass("future");
+      };
+      function FourPM() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("past");
+        $(".hourEleven").addClass("past");
+        $(".hourTwelve").addClass("past");
+        $(".hourOne").addClass("past");
+        $(".hourTwo").addClass("past");
+        $(".hourThree").addClass("past");
+        $(".hourFour").addClass("present");
+        $(".hourFive").addClass("future");
+      };
+      function FivePM() {
+        $(".hourNine").addClass("past");
+        $(".hourTen").addClass("past");
+        $(".hourEleven").addClass("past");
+        $(".hourTwelve").addClass("past");
+        $(".hourOne").addClass("past");
+        $(".hourTwo").addClass("past");
+        $(".hourThree").addClass("past");
+        $(".hourFour").addClass("past");
+        $(".hourFive").addClass("present");
+      };
+
+      function updateTime(){
+        if (time == 9) {
+          NineAM();
+        } else if (time == 10) {
+          TenAM();
+        } else if (time == 11) {
+          ElevenAM();
+        }else if (time == 12) {
+          TwelvePM();
+        }else if (time == 13) {
+          OnePM();
+        }else if (time == 14) {
+          TwoPM();
+        }else if (time == 15) {
+          ThreePM();
+        }else if (time == 16) {
+          FourPM();
+        }else if (time == 17) {
+          FivePM();
+        }else if (time < 9) {
+          beforeNine();
+        }else {
+         afterFive();
+        }
+      };
+      updateTime();
+
+
 });
 // console.log(now.format());
 // console.log(firstBlock.text(localStorage.getItem("userStored01")))
